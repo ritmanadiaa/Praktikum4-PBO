@@ -33,7 +33,7 @@ public String getIdAset(){
     return idAset;
     }
 ```
-- Method **`tampilkanInfoAset() :
+- Method **`tampilkanInfoAset()`** :
 Untuk mencetak seluruh informasi detail dari aset tersebut ke konsol dalam format yang rapih.
 ```java
 public void tampilkanInfoAset(){
