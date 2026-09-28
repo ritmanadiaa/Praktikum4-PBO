@@ -43,8 +43,8 @@ public void tampilkanInfoAset(){
         System.out.println("Status Kondisi : " + statusKondisi);
         System.out.println("-----------------------------------");
 ```
-2. Class **`ManajemenAset`**
-Kelas ini berfungsi sebagai **`Business Logic/Service`** yang mengelola sekumpulan objek **`AsetIT`** menggunakan struktur data (**`ArrayList`**).  
+2. **`Class ManajemenAset`**  
+class ini berfungsi sebagai **`Business Logic/Service`** yang mengelola sekumpulan objek **`AsetIT`** menggunakan struktur data (**`ArrayList`**).  
 - Package & Import :
 kelas ini berada di package tugasprak4 dan memanggil library dari Java untuk menggunakan **`List`** (interface daftar), **`ArrayList`** (implementasi daftar dinamis), dan **`Iterator`** (alat untuk menelusuri isi daftar).
  ```java
