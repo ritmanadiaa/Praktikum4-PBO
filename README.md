@@ -47,12 +47,12 @@ public void tampilkanInfoAset(){
 Kelas ini berfungsi sebagai **`Business Logic/Service`** yang mengelola sekumpulan objek **`AsetIT`** menggunakan struktur data (**`ArrayList`**).  
 - Package & Import :
 kelas ini berada di package tugasprak4 dan memanggil library dari Java untuk menggunakan **`List`** (interface daftar), **`ArrayList`** (implementasi daftar dinamis), dan **`Iterator`** (alat untuk menelusuri isi daftar).
- ``java
+ ```java
 package tugasprak4;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
+import java.util.List;  
 ```
 
 - Atribut & Constructor **`daftarAset`**(**`List<AsetIT>`**) :
@@ -64,5 +64,45 @@ public class ManajemenAset {
     public ManajemenAset(){
         this.daftarAset = new ArrayList<>();
     }
-    ```
-- 
+```
+- Method **`tambahAset()`** digunakan untuk menambahkan data aset baru ke dalam daftar
+```java
+public void tambahAset(AsetIT asetbaru) {
+        daftarAset.add(asetbaru);
+        System.out.println("Aset " + asetbaru.getIdAset() + " berhasil ditambahkan.");
+    }
+```
+- Method **`tampilkanSemuaAset()`** digunakan untuk menampilkan seluruh aset yang tersimpan dengan *for-each looping*
+```java
+public void tampilkanSemuaAset() {
+        if (daftarAset.isEmpty()) {
+            System.out.println("Daftar aset kosong.");
+            return;
+        }
+System.out.println("\n=== DAFTAR ASET IT ===");
+    for (AsetIT aset : daftarAset) {
+        aset.tampilkanInfoAset();
+    }
+}
+```
+- Method **`hapusAset()`** digunakan untuk menghapus data aset berdasarkan id tertentu
+```java
+public void hapusAset(String idAset) {
+    Iterator<AsetIT> iterator = daftarAset.iterator();
+    boolean ditemukan = false;
+
+    while (iterator.hasNext()) {
+        AsetIT aset = iterator.next();
+        if (aset.getIdAset().equalsIgnoreCase(idAset)) {
+            iterator.remove();
+            ditemukan = true;
+            System.out.println("Aset dengan ID " + idAset + " berhasil dihapus.");
+            break;
+        }
+    }
+
+    if (!ditemukan) {
+        System.out.println("Peringatan: Aset dengan ID \"" + idAset + "\" tidak ditemukan!");
+    }
+}
+```
