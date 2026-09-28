@@ -26,3 +26,21 @@ public AsetIT(String idAset, String namaPerangkat, String lokasi,String statusKo
         this.lokasi = lokasi;
         this.statusKondisi = statusKondisi;
 ```
+- Getter **`getIdAset()`** :
+Untuk mengambil atau membaca nilai dari variabel package **`idAset`** dari luar kelas.
+```java
+public String getIdAset(){
+    return idAset;
+    }
+```
+- Method **`tampilkanInfoAset() :
+Untuk mencetak seluruh informasi detail dari aset tersebut ke konsol dalam format yang rapih.
+```java
+public void tampilkanInfoAset(){
+        System.out.println("ID Aset        : " + idAset);
+        System.out.println("Nama Perangkat : " + namaPerangkat);
+        System.out.println("Lokasi         : " + lokasi);
+        System.out.println("Status Kondisi : " + statusKondisi);
+        System.out.println("-----------------------------------");
+```
+
