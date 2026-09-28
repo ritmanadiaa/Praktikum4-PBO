@@ -7,8 +7,7 @@ Berikut adalah penjelasan code dari masing-masing class.
 ```java
 package Praktikum4.Tugas;
 
-public class AsetIT {
-
+public class AsetIT {  
 - Attributes untuk menyimpan kode unik aset, nama perangkat IT, lokasi aset, dan status kelayakan aset.  
 ```java
     String idAset;
