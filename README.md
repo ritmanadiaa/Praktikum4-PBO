@@ -106,5 +106,46 @@ public void hapusAset(String idAset) {
     }
 }
 ```
-3. **`class MainAset`**
+3. **`class MainAset`**  
+- **`Package & Header Kelas`** : menunjukan bahwa kelas ini berada di package **`tugasprak4`** dan kelas utama bernama **`MainAset`**
+``java
+package tugasprak4;
+
+public class MainAset {
+    public static void main(String[] args) {
+```
+- Objek **`ManajemenAset`** : membuat objek baru bernama **`manajemen`** dari kelas **`ManajemenAset`** yg berfungsi untuk mengelola daftar aset (menambah, menampilkan, dan menghapus`**
+```java
+// a. Instansiasi objek ManajemenAset
+ManajemenAset manajemen = new ManajemenAset();
+```
+- Menambah Data Aset
+``java
+// i. Tambahkan minimal 4 data aset IT;
+manajemen.tambahAset(new AsetIT("AST-001", "Server Main Frame", "Data Center", "Baik"));
+manajemen.tambahAset(new AsetIT("AST-002", "Router Cisco 2901", "Ruang Network", "Baik"));
+manajemen.tambahAset(new AsetIT("AST-003", "Switch Catalyst", "Lantai 2", "Rusak"));
+manajemen.tambahAset(new AsetIT("AST-004", "PC Workstation", "Lab Komputer", "Baik"));
+```
+- Menampilakn semua aset
+```java
+// ii. Tampilkan semua aset
+System.out.println("=== 1. DAFTAR ASET IT ===");
+manajemen.tampilkanSemuaAset();
+```
+- Menghapus Aset berdasarkan ID
+```java
+// iii. Hapus salah satu aset menggunakan ID yang valid
+System.out.println("=== 2. MENGHAPUS ASET (AST-003) ===");
+manajemen.hapusAset("AST-003");
+```
+- Menampilkan aset setelah dihapus
+```java
+// iv. Tampilkan kembali semua aset untuk membuktikan penghapusan berhasil
+System.out.println("\n=== 3. DAFTAR ASET SETELAH PENGHAPUSAN ===");
+manajemen.tampilkanSemuaAset();
+```
+### Output Program
+
+
    
