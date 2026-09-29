@@ -2,8 +2,8 @@
 ### Array, List dan Iterator
 Berikut adalah penjelasan code dari masing-masing class.
 1. **`Class AsetIT`**  
- Class ini berfungsi sebagai data model (Entity) yang merepresentasikan objek     aset IT menggunakan atribut-atribut dasar beserta method untuk menampilkan       informasi.
-- Membuat class **`AsetIT`** didalam package **`Praktikum4.Tugas`**
+ Class ini berfungsi sebagai data model (Entity) yang merepresentasikan objek aset IT menggunakan atribut-atribut dasar beserta method untuk menampilkan informasi.
+- Membuat class **`AsetIT`** didalam package **`tugasprak4`**
 ```java
 package tugasprak4;
 
@@ -106,3 +106,5 @@ public void hapusAset(String idAset) {
     }
 }
 ```
+3. **`class MainAset`**
+   
