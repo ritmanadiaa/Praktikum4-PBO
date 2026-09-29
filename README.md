@@ -46,7 +46,7 @@ public void tampilkanInfoAset(){
 2. **`Class ManajemenAset`**  
 class ini berfungsi sebagai **`Business Logic/Service`** yang mengelola sekumpulan objek **`AsetIT`** menggunakan struktur data (**`ArrayList`**).  
 - Package & Import :
-kelas ini berada di package tugasprak4 dan memanggil library dari Java untuk menggunakan **`List`** (interface daftar), **`ArrayList`** (implementasi daftar dinamis), dan **`Iterator`** (alat untuk menelusuri isi daftar).
+kelas ini berada di package tugasprak4 dan memanggil library dari Java untuk menggunakan **`List`**, **`ArrayList`**, dan **`Iterator`**.
  ```java
 package tugasprak4;
 
@@ -56,7 +56,7 @@ import java.util.List;
 ```
 
 - Atribut & Constructor **`daftarAset`**(**`List<AsetIT>`**) :
-Menggunakan interface **`List`** dengan implementasi **`ArrayList`** untuk menyimpan banyak objek **`AsetIT`** secara dinamis (ukurannya bisa bertambah/berkurang). Constructor yang akan dipanggil saat objek dibuat. Di dalamnya, **`daftarAset`** diinisialisasi sebagai **`ArrayList`** kosong yang siap diisi data.
+Menggunakan interface **`List`** dengan implementasi **`ArrayList`** untuk menyimpan banyak objek **`AsetIT`** secara dinamis (ukurannya bisa bertambah/berkurang). Constructor yang akan dipanggil saat objek dibuat di dalamnya, **`daftarAset`** diinisialisasi sebagai **`ArrayList`** kosong yang siap diisi data.
 ```java
 public class ManajemenAset {
     private List<AsetIT> daftarAset;
