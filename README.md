@@ -114,7 +114,7 @@ package tugasprak4;
 public class MainAset {
     public static void main(String[] args) {
 ```
-- Objek **`ManajemenAset`** : membuat objek baru bernama **`manajemen`** dari kelas **`ManajemenAset`** yg berfungsi untuk mengelola daftar aset (menambah, menampilkan, dan menghapus`**
+- Objek **`ManajemenAset`** : membuat objek baru bernama **`manajemen`** dari kelas **`ManajemenAset`** yg berfungsi untuk mengelola daftar aset (menambah, menampilkan, dan menghapus)
 ```java
 // a. Instansiasi objek ManajemenAset
 ManajemenAset manajemen = new ManajemenAset();
