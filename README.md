@@ -146,6 +146,48 @@ System.out.println("\n=== 3. DAFTAR ASET SETELAH PENGHAPUSAN ===");
 manajemen.tampilkanSemuaAset();
 ```
 ### Output Program
+```paintext
+=== 1. DAFTAR ASET IT ===
+=== DAFTAR ASET IT ===
+ID Aset        : AST-001
+Nama Perangkat : Server Main Frame
+Lokasi         : Data Center
+Status Kondisi : Baik
+----------------------------------
+ID Aset          : AST-002
+Nama Perangkat   : Router Cisco 2901
+Lokasi           : Ruang Network
+Status Kondisi   : Baik
+-----------------------------------
+ID Aset          : AST-003
+Nama Perangkat   : Switch Catalyst
+Lokasi           : Lantai 2
+Status Kondisi   : Rusak
+-----------------------------------
+ID Aset          : AST-004
+Nama Perangkat   : PC Workstation
+Lokasi           : Lab Komputer
+Status Kondisi   : Baik
+-----------------------------------
+=== 2. MENGHAPUS ASET (AST-003) ===
+Aset dengan ID AST-003 berhasil dihapus.
 
-
+=== 3. DAFTAR ASET SETELAH PENGHAPUSAN ===
+=== DAFTAR ASET IT ===
+ID Aset          : AST-001
+Nama Perangkat   : Server Main Frame
+Lokasi           : Data Center
+Status Kondisi   : Baik
+-----------------------------------
+ID Aset          : AST-002
+Nama Perangkat   : Router Cisco 2901
+Lokasi           : Ruang Network
+Status Kondisi   : Baik
+-----------------------------------
+ID Aset          : AST-004
+Nama Perangkat   : PC Workstation
+Lokasi           : Lab Komputer
+Status Kondisi   : Baik
+-----------------------------------
+```
    
